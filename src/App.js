@@ -1,23 +1,71 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
+import Analytics from "./components/Analytics";
+import Cards from "./components/Cards";
+import Transactions from "./components/Transactions";
+import Settings from "./components/Settings";
+import Support from "./components/Support";
+import NotFound from "./components/NotFound";
+import Layout from "./components/Layout";
+import CallSupport from "./components/CallSupport";
+import ChatSupport from "./components/ChatSupport";
+import Coupons from "./components/Coupons";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "analytics",
+        element: <Analytics />,
+      },
+      {
+        path: "cards",
+        element: <Cards />,
+      },
+      {
+        path: "transactions",
+        element: <Transactions />,
+      },
+      {
+        path: "coupons",
+        element: <Coupons />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
+      },
+      {
+        path: "support",
+        element: <Support />,
+        children: [
+          {
+            path: "chat",
+            element: <ChatSupport />,
+          },
+          {
+            path: "call",
+            element: <CallSupport />,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="py-4 ps-5 pe-4">
+      <RouterProvider router={router} />
     </div>
   );
 }

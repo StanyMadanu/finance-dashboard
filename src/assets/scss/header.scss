@@ -1,0 +1,72 @@
+.header {
+  .wallet {
+    .custom-select-wrapper {
+      background-color: #e4f0ff;
+      border-radius: 5px;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+
+      #accounts {
+        background-color: transparent;
+        border: none;
+        outline: 0;
+        font-weight: 500;
+        font-size: 13px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .selector-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+    }
+    .icon {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: rgb(var(--primary-color));
+      color: rgb(var(--fx-white));
+      cursor: pointer;
+    }
+  }
+  .notifications {
+    .icon {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: rgb(var(--fx-white));
+      box-shadow: -2px 12px 27px -5px rgba(0, 0, 0, 0.3);
+      color: rgb(var(--muted-color));
+      cursor: pointer;
+    }
+  }
+
+  .profile-img {
+    img {
+      object-fit: cover;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+  }
+}
+
+// media screens
+@media (max-width: 991.9px) {
+  .wallet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575.9px) {
+  .profile-wrap {
+    margin-left: auto;
+  }
+}

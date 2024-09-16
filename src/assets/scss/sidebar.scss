@@ -1,0 +1,47 @@
+.navigation {
+  left: 11px;
+  top: 55px;
+  transform: translateY(3rem);
+
+  .sidebar-wrapper {
+    background-color: rgb(var(--primary-color));
+    border-radius: 50px;
+
+    .sidebar-link {
+      border-radius: 50px;
+
+      a {
+        font-size: large;
+        color: rgba(var(--fx-white), 65%);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        transition: all ease 0.8s;
+      }
+
+      &.active {
+        background-color: rgba(var(--secondary-color), 36%);
+        box-shadow: -2px -2px 30px -2px rgb(253 127 92 / 67%) inset,
+          0px 0px 5px 1px rgba(0, 0, 0, 0.075);
+        transition: all ease 5s;
+
+        a {
+          color: rgb(var(--fx-white));
+          transition: all ease 0.8s;
+        }
+      }
+
+      &:hover {
+        background-color: rgba(var(--secondary-color), 36%);
+        transition: all ease 0.9s;
+
+        a {
+          color: rgb(var(--fx-white));
+        }
+      }
+    }
+  }
+}
