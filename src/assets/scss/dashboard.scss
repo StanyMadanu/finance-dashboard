@@ -19,12 +19,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px dashed rgba(20, 117, 207, 0.278);
+  border: 2px dashed #86b7fe;
   width: 200px;
   height: 130px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: #dfebf9;
+  background-color: rgb(var(--third-color));
 
   img {
     width: 100%;
@@ -35,10 +35,14 @@
 }
 
 .transaction-carousel {
+  .transaction-head-img {
+    width: 30px;
+  }
+
   .transaction-carousel-header {
     .transaction-carousel-indicators {
       p {
-        background-color: #dfebf9;
+        background-color: rgb(var(--third-color));
         width: fit-content;
         border-radius: 50%;
         padding: 10px;
@@ -47,4 +51,133 @@
       }
     }
   }
+}
+
+// checkbox styles
+.checkbox {
+  display: none;
+}
+
+.slider {
+  width: 63px;
+  height: 34px;
+  background-color: #dfebf9;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25) inset;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: "\edc4"; //\edc2
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(var(--white-color));
+  transform: translateX(4px);
+  border-radius: 30px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-weight: 500;
+
+  font-family: "tabler-icons" !important; /* Ensure the font-family matches the @font-face declaration */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slider.down {
+  &::before {
+    content: "\edc2";
+    color: red;
+  }
+}
+
+.checkbox:checked ~ .slider::before {
+  transform: translateX(32px);
+  box-shadow: 0 0 10px 3px rgb(0, 0, 0, 0.25);
+}
+
+.checkbox:checked ~ .slider {
+  //   background-color: #2196f3;
+}
+
+.checkbox:active ~ .slider::before {
+  transform: translate(0);
+}
+
+//========================================
+.transaction-card-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    border: 2px dashed rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    opacity: 1;
+    background-color: rgb(var(--third-color));
+    transition: opacity 0.3s ease;
+    z-index: 0;
+  }
+
+  .transaction-card {
+    background-color: rgb(var(--white-color));
+    padding: 15px;
+    border-radius: 9px;
+    cursor: pointer;
+    z-index: 1;
+    transform: translate(0, 0);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    .card-img {
+      width: 50px;
+      height: 50px;
+    }
+
+    &:hover {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      transform: translate(13px, -20px);
+    }
+
+    // img {
+    //   object-fit: cover;
+    // }
+  }
+}
+
+// contact section
+.contacts-heading {
+}
+
+.contact {
+  .contact-img {
+    width: 50px;
+    height: 50px;
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.bell-icon {
+  background: linear-gradient(90deg, red, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

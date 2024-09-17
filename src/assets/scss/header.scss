@@ -1,7 +1,7 @@
 .header {
   .wallet {
     .custom-select-wrapper {
-      background-color: #e4f0ff;
+      background-color: rgb(var(--third-color));
       border-radius: 5px;
       position: relative;
       display: inline-block;
@@ -50,6 +50,7 @@
   }
 
   .profile-img {
+    width: 35px;
     img {
       object-fit: cover;
       border-radius: 9px;

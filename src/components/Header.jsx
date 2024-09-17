@@ -40,7 +40,6 @@ const Header = () => {
           <img
             src="https://static.vecteezy.com/ti/gratis-foton/p2/27571259-sot-pojke-och-flicka-3d-tecknad-serie-karaktar-gratis-fotona.jpg"
             alt="profile-image"
-            width="35"
           />
         </div>
       </div>

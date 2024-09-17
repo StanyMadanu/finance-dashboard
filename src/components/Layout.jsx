@@ -8,10 +8,14 @@ const Layout = () => {
     <>
       <Sidebar />
 
-      <main className="main">
-        <div className="container">
-          <Header />
-          <Outlet />
+      <main className="main position-relative">
+        <div className="main-wrapper">
+          <div className="position-sticky">
+            <Header />
+          </div>
+          <div className="main-content">
+            <Outlet />
+          </div>
         </div>
       </main>
     </>

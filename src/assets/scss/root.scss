@@ -3,6 +3,8 @@
 :root {
   --primary-color: 253, 127, 92; //#fd7f5c
   --secondary-color: 250, 250, 250; //#fafafa
+  --third-color: 222, 234, 248;
+  --white-color: 255, 255, 255;
 
   --fx-white: 255, 255, 255;
   --muted-color: 127, 127, 127;
@@ -33,6 +35,19 @@ ul {
   }
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 h1,
 h2,
 h3,
@@ -61,6 +76,10 @@ h5 {
 
 .fs-10 {
   font-size: 1.3rem;
+}
+
+.fs-28 {
+  font-size: 2.8rem;
 }
 
 .text-muted {
