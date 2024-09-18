@@ -64,7 +64,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="py-4 ps-5 pe-4">
+    <div className="App py-5 px-5 mx-5">
       <RouterProvider router={router} />
     </div>
   );

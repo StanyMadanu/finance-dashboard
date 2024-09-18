@@ -37,6 +37,20 @@
       cursor: pointer;
     }
   }
+}
+
+.profile-wrap {
+  top: 0;
+  background-color: #f6f5fa;
+
+  .profile-img {
+    width: 35px;
+    img {
+      object-fit: cover;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+  }
   .notifications {
     .icon {
       display: inline-block;
@@ -45,15 +59,6 @@
       background-color: rgb(var(--fx-white));
       box-shadow: -2px 12px 27px -5px rgba(0, 0, 0, 0.3);
       color: rgb(var(--muted-color));
-      cursor: pointer;
-    }
-  }
-
-  .profile-img {
-    width: 35px;
-    img {
-      object-fit: cover;
-      border-radius: 9px;
       cursor: pointer;
     }
   }

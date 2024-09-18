@@ -1,12 +1,10 @@
 import React from "react";
 import { LuWallet } from "react-icons/lu";
-import { IoNotificationsOutline } from "react-icons/io5";
-import { BiMessageDetail } from "react-icons/bi";
 import { TiArrowUnsorted } from "react-icons/ti";
 
 const Header = () => {
   return (
-    <section className="header d-flex justify-content-between py-5 align-items-center">
+    <section className="header d-flex justify-content-between align-items-center py-5 px-4">
       <h5 className="fw-bold mb-0 d-none d-sm-block">Good Evening Mikey!</h5>
 
       <div className="wallet d-flex gap-3">
@@ -27,7 +25,7 @@ const Header = () => {
         </span>
       </div>
 
-      <div className="profile-wrap d-flex gap-4">
+      {/* <div className="profile-wrap d-flex gap-4">
         <div className="notifications d-flex gap-3">
           <span className="icon">
             <BiMessageDetail />
@@ -42,7 +40,7 @@ const Header = () => {
             alt="profile-image"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

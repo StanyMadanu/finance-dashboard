@@ -6,7 +6,7 @@ import { MdOutlineDeleteOutline } from "react-icons/md";
 
 const BankCards = () => {
   const [image, setImage] = useState(null);
-  const [fileName, setFileName] = useState("No Selected File");
+  const [fileName, setFileName] = useState("");
   const uploadFile = useRef();
 
   const fileUpload = () => {

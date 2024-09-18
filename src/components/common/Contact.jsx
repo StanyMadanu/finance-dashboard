@@ -50,7 +50,7 @@ const Contact = () => {
         </span>
       </div>
       <p className="fw-semibold fs-7 py-3">Last Payment Sent 2 days ago</p>
-      <div className="d-flex flex-column gap-4">
+      <div className="d-flex flex-column gap-2 all-contacts">
         {allContacts.map((contact) => (
           <div className="contact d-flex gap-3" key={contact.imgUrl}>
             <div className="contact-img">

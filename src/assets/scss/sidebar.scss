@@ -1,7 +1,8 @@
 .navigation {
-  left: 11px;
+  left: 62px;
   top: 55px;
   transform: translateY(3rem);
+  // transform: translateY(calc(100vh - 43rem));
   z-index: 1;
 
   .sidebar-wrapper {
