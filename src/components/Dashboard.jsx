@@ -26,9 +26,9 @@ const Dashboard = () => {
       <div className="row mt-4 px-4">
         <div className="col-xl-12 col-lg-12 col-md-12 col-12">
           <div className="d-flex justify-content-between mb-3">
-            <h5 className="fw-bold text-capitalize">
+            <h6 className="fw-bold text-capitalize">
               quick summary on your account
-            </h5>
+            </h6>
             <button className="text-capitalize text-muted">view all</button>
           </div>
         </div>

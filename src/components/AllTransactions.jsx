@@ -12,9 +12,9 @@ const AllTransactions = () => {
         // data-bs-ride="carousel"
         data-bs-ride="false"
       >
-        <div className="transaction-carousel-header px-4 d-flex justify-content-between align-items-center">
-          <h5 className="fw-semibold">All Transactions</h5>
-          <div className="transaction-carousel-indicators d-flex fs-9 gap-3">
+        <div className="transaction-carousel-header px-4 d-flex justify-content-between align-items-center mb-1">
+          <h6 className="fw-bold">All Transactions</h6>
+          <div className="transaction-carousel-indicators d-flex fs-18 gap-3">
             <p
               data-bs-target="#transaction-carousel"
               data-bs-slide="prev"

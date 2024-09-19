@@ -18,7 +18,7 @@ const CarouselBody = () => {
             }`}
           >
             <div className="d-flex flex-column gap-3">
-              <h6 className="text-muted">This Week Summary</h6>
+              <p className="text-muted fs-13 fw-semibold">This Week Summary</p>
               <div className="d-flex justify-content-between align-items-center mb-3">
                 <div className="d-flex align-items-center gap-2">
                   <div className="transaction-head-img">
@@ -28,9 +28,9 @@ const CarouselBody = () => {
                     />
                   </div>
 
-                  <h6 className="fw-bold">
+                  <h4 className="fw-bold">
                     113,650 <span className="text-muted">INR</span>
-                  </h6>
+                  </h4>
                 </div>
                 <div className="d-flex align-items-center gap-2">
                   <span className="text-success">

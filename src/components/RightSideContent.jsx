@@ -30,7 +30,7 @@ const RightSideContent = () => {
 
         <hr />
 
-        <div className="events-wrapper mt-4 d-flex flex-column">
+        <div className="events-wrapper mt-5 d-flex flex-column">
           <span className="bell-icon mb-2 fs-22">
             <PiBellRingingBold />
           </span>
