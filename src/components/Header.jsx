@@ -8,8 +8,8 @@ const Header = () => {
       <h5 className="fw-bold mb-0 d-none d-sm-block">Good Evening Mikey!</h5>
 
       <div className="wallet d-flex gap-3">
-        <div className="custom-select-wrapper ps-3 pe-5 fs-7 d-flex align-items-center">
-          <select name="accounts" id="accounts" className="fw-bold">
+        <div className="custom-select-wrapper fs-7 d-flex align-items-center">
+          <select name="accounts" id="accounts" className="fw-bold ps-3 pe-5">
             <option value="personal">Personal Account</option>
             <option value="salary">Salary Account</option>
             <option value="savings">Savings Account</option>

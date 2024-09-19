@@ -45,7 +45,8 @@ const Contact = () => {
     <>
       <div className="contacts-heading d-flex align-items-center justify-content-between">
         <h3 className="text-capitalize fw-bold">contacts</h3>
-        <span>
+        <span className="search-contacts d-flex gap-2">
+          {/* <input type="text" className="search-input" /> */}
           <FiSearch />
         </span>
       </div>

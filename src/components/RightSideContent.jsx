@@ -5,6 +5,7 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { BiMessageDetail } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import bgShape1 from "../assets/images/dashboard/bg-shape1.png";
+import { Link } from "react-router-dom";
 
 const RightSideContent = () => {
   return (
@@ -20,12 +21,35 @@ const RightSideContent = () => {
             </span>
           </div>
           <div className="profile-img">
-            <img
-              src="https://static.vecteezy.com/ti/gratis-foton/p2/27571259-sot-pojke-och-flicka-3d-tecknad-serie-karaktar-gratis-fotona.jpg"
-              alt="profile-image"
-            />
+            <div class="dropdown">
+              <img
+                src="https://static.vecteezy.com/ti/gratis-foton/p2/27571259-sot-pojke-och-flicka-3d-tecknad-serie-karaktar-gratis-fotona.jpg"
+                alt="profile-image"
+                data-bs-toggle="dropdown"
+                // aria-expanded="false"
+                className="dropdown-toggle"
+              />
+              <ul className="dropdown-menu fs-13">
+                <li>
+                  <Link to="#" className="dropdown-item">
+                    Profile
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#" className="dropdown-item">
+                    Settings
+                  </Link>
+                </li>
+                <li>
+                  <Link to="#" className="dropdown-item">
+                    Logout
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
         <Contact />
 
         <hr />
