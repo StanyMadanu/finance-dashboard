@@ -16,7 +16,7 @@ const Layout = () => {
   return (
     <>
       {loading ? (
-        <PostSkeleton />
+        <ShimmerSkeleton />
       ) : (
         <>
           <Sidebar />
@@ -27,7 +27,7 @@ const Layout = () => {
   );
 };
 
-const PostSkeleton = () => (
+const ShimmerSkeleton = () => (
   <div>
     <Skeleton
       height={"90vh"}
