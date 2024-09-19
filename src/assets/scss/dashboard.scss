@@ -162,7 +162,16 @@
   }
 }
 
-// contacts section
+// rightSide content- contacts section
+
+.side-content {
+  background-image: url("../images/dashboard/bg-shape1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: bottom;
+  background-size: 60%;
+}
+
 .contacts-heading {
 }
 
@@ -194,10 +203,24 @@
   }
 }
 
-.bell-icon {
-  background: linear-gradient(90deg, red, purple);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.events-wrapper {
+  .bell-icon {
+    background: linear-gradient(90deg, red, purple);
+    color: purple;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  //-----------lets-plan
+
+  .lets-plan {
+    span {
+      background-color: rgb(var(--primary-color));
+      border-radius: 30px;
+      box-shadow: 0px 0px 3px 7px #fac8bf;
+      cursor: pointer;
+    }
+  }
 }
 
 // charts-card styles

@@ -14,7 +14,7 @@ const Dashboard = () => {
   return (
     <>
       <div className="row justify-content-evenly">
-        <div className="col-xl-3 col-lg-3 justify-content-between">
+        <div className="col-xl-3 col-lg-3 col-md-12 justify-content-between d-flex flex-row flex-lg-column">
           <BankCards />
         </div>
 

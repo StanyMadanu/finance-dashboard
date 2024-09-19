@@ -73,6 +73,11 @@ button {
   background-color: transparent;
 }
 
+hr {
+  margin: 15px 0;
+  border-top: 2px solid rgba(var(--muted-color), 0.8);
+}
+
 h1,
 h2,
 h3,
@@ -101,6 +106,10 @@ h5 {
 
 .fs-10 {
   font-size: 1.3rem;
+}
+
+.fs-22 {
+  font-size: 2.2rem;
 }
 
 .fs-28 {
