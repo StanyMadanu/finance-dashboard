@@ -10,7 +10,7 @@ const RightSideContent = () => {
   return (
     <>
       <div className="side-content px-5">
-        <div className="profile-wrap py-5 d-flex gap-4 justify-content-end position-sticky">
+        <div className="profile-wrap pt-4 pb-3 d-flex gap-4 justify-content-end position-sticky">
           <div className="notifications d-flex gap-3">
             <span className="icon">
               <BiMessageDetail />

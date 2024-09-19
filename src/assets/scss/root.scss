@@ -91,9 +91,20 @@ p {
   margin-bottom: 0;
 }
 
-.h5,
-h5 {
-  font-size: clamp(0.8rem, 4vw, 1.25rem);
+// .h5,
+// h5 {
+//   font-size: clamp(0.8rem, 4vw, 1.25rem);
+// }
+
+.lh-15 {
+  line-height: 15px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
 }
 
 .fs-7 {

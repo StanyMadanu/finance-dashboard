@@ -105,7 +105,7 @@ const LineChartComponent = () => {
     };
   }, []);
 
-  return <div ref={chartRef} style={{ width: "100%", height: "200px" }}></div>;
+  return <div ref={chartRef} style={{ width: "100%", height: "175px" }}></div>;
 };
 
 export default LineChartComponent;

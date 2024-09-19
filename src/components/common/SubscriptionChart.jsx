@@ -119,7 +119,7 @@ const SubscriptionChart = () => {
   }, []);
 
   return (
-    <div ref={subscription} style={{ width: "100%", height: "200px" }}></div>
+    <div ref={subscription} style={{ width: "100%", height: "175px" }}></div>
   );
 };
 

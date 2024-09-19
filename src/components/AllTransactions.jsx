@@ -9,8 +9,8 @@ const AllTransactions = () => {
       <div
         id="transaction-carousel"
         className="carousel slide"
-        data-bs-ride="carousel"
-        // data-bs-ride="false"
+        // data-bs-ride="carousel"
+        data-bs-ride="false"
       >
         <div className="transaction-carousel-header px-4 d-flex justify-content-between align-items-center">
           <h5 className="fw-semibold">All Transactions</h5>

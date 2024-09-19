@@ -4,7 +4,7 @@ import { TiArrowUnsorted } from "react-icons/ti";
 
 const Header = () => {
   return (
-    <section className="header d-flex justify-content-between align-items-center py-5 px-4">
+    <section className="header d-flex justify-content-between align-items-center pt-4 pb-3 px-4">
       <h5 className="fw-bold mb-0 d-none d-sm-block">Good Evening Mikey!</h5>
 
       <div className="wallet d-flex gap-3">

@@ -30,7 +30,7 @@ const BankCards = () => {
       <div className="debit-card-wrapper">
         <img src={ccyellow} alt="debit-card" />
       </div>
-      <div className="debit-card-wrapper my-0 my-lg-3">
+      <div className="debit-card-wrapper">
         <img src={ccblue} alt="debit-card" />
       </div>
       <div>

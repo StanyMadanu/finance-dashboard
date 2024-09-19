@@ -110,7 +110,7 @@ const ExpensesChart = () => {
     };
   }, []);
 
-  return <div ref={expense} style={{ width: "100%", height: "200px" }}></div>;
+  return <div ref={expense} style={{ width: "100%", height: "175px" }}></div>;
 };
 
 export default ExpensesChart;

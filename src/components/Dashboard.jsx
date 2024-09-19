@@ -14,7 +14,7 @@ const Dashboard = () => {
   return (
     <>
       <div className="row justify-content-evenly">
-        <div className="col-xl-3 col-lg-3 col-md-12 justify-content-between d-flex flex-row flex-lg-column">
+        <div className="col-xl-3 col-lg-3 col-md-12 justify-content-between d-flex flex-row flex-lg-column gap-2">
           <BankCards />
         </div>
 
@@ -23,9 +23,9 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="row my-5 px-4">
+      <div className="row mt-4 px-4">
         <div className="col-xl-12 col-lg-12 col-md-12 col-12">
-          <div className="d-flex justify-content-between mb-5">
+          <div className="d-flex justify-content-between mb-3">
             <h5 className="fw-bold text-capitalize">
               quick summary on your account
             </h5>

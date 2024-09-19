@@ -88,7 +88,7 @@ const DoughnutChart = () => {
     };
   }, []);
 
-  return <div ref={graph} style={{ width: "100%", height: "200px" }}></div>;
+  return <div ref={graph} style={{ width: "100%", height: "175px" }}></div>;
 };
 
 export default DoughnutChart;
