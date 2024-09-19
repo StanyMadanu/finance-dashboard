@@ -6,6 +6,18 @@
   background-position: right;
   background-position-y: bottom;
   background-size: 60%;
+  .profile-wrap {
+    .profile-img {
+      .dropdown {
+        .dropdown-menu {
+          border: none;
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+          transform: translate3d(0px, 40px, 0px) !important;
+          transition: transform 0.9s;
+        }
+      }
+    }
+  }
 }
 
 .contacts-heading {

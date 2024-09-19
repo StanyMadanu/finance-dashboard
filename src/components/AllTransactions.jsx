@@ -1,7 +1,6 @@
 import React from "react";
 import CarouselBody from "./common/CarouselBody";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
-import { HiOutlineArrowLongUp, HiOutlineArrowLongDown } from "react-icons/hi2";
 
 const AllTransactions = () => {
   return (

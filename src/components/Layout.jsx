@@ -10,7 +10,7 @@ const Layout = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (
@@ -33,7 +33,7 @@ const ShimmerSkeleton = () => (
       height={"90vh"}
       color="#202020"
       borderRadius="30px"
-      highlightColor="#F7E7E8"
+      highlightColor="#fbcfc2"
     />
   </div>
 );

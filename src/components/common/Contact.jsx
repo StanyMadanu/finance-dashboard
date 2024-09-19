@@ -58,8 +58,8 @@ const Contact = () => {
               <img src={contact.imgUrl} alt="contact-img1" />
             </div>
             <div className="contact-info d-flex flex-column gap-1 justify-content-center">
-              <h6 className="text-capitalize fw-bold">{contact.name}</h6>
-              <p className="fs-7 text-muted">{contact.location}</p>
+              <p className="text-capitalize fs-14 fw-bold">{contact.name}</p>
+              <p className="fs-12 text-muted">{contact.location}</p>
             </div>
           </div>
         ))}
