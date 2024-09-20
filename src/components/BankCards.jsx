@@ -27,44 +27,55 @@ const BankCards = () => {
 
   return (
     <>
-      <div className="debit-card-wrapper">
-        <img src={ccyellow} alt="debit-card" />
-      </div>
-      <div className="debit-card-wrapper">
-        <img src={ccblue} alt="debit-card" />
-      </div>
-      <div>
-        <div className="fileUpload" onClick={fileUpload}>
-          <input
-            type="file"
-            accept="image/*"
-            id="credit-card"
-            ref={uploadFile}
-            hidden
-            onChange={(e) => handleChange(e)}
-          />
-          {image ? (
-            <img src={image} alt="cc-image" />
-          ) : (
-            <>
-              <BsPlusLg /> <span className="fs-7 mt-1">Add Another Card</span>
-            </>
-          )}
+      <div className="row gap-3">
+        <div className="col-lg-12 col-md-4 col-sm-4">
+          <div className="debit-card-wrapper">
+            <img src={ccyellow} alt="debit-card" />
+          </div>
         </div>
-        <div className="d-flex gap-2 align-items-center fs-7">
-          <span>{fileName}</span>
-          {image === null ? (
-            ""
-          ) : (
-            <MdOutlineDeleteOutline
-              onClick={() => {
-                setFileName("No Selected File");
-                setImage(null);
-              }}
-              style={{ cursor: "pointer" }}
-              className="text-danger fw-bold"
-            />
-          )}
+        <div className="col-lg-12 col-md-4 col-sm-4">
+          <div className="debit-card-wrapper">
+            <img src={ccblue} alt="debit-card" />
+          </div>
+        </div>
+        <div className="col-lg-12 col-md-4 col-sm-4">
+          <div>
+            <div className="fileUpload" onClick={fileUpload}>
+              <input
+                type="file"
+                accept="image/*"
+                id="credit-card"
+                ref={uploadFile}
+                hidden
+                onChange={(e) => handleChange(e)}
+              />
+              {image ? (
+                <img src={image} alt="cc-image" />
+              ) : (
+                <>
+                  <BsPlusLg />
+                  <span className="fs-7 mt-1 d-none d-md-block">
+                    Add Another Card
+                  </span>
+                </>
+              )}
+            </div>
+            <div className="d-flex gap-2 align-items-center fs-7">
+              <span>{fileName}</span>
+              {image === null ? (
+                ""
+              ) : (
+                <MdOutlineDeleteOutline
+                  onClick={() => {
+                    setFileName("No Selected File");
+                    setImage(null);
+                  }}
+                  style={{ cursor: "pointer" }}
+                  className="text-danger fw-bold"
+                />
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </>

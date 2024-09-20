@@ -23,7 +23,8 @@
   border: 2px dashed #86b7fe;
   // width: 200px;
   width: 100%;
-  height: 120px;
+  // height: 120px;
+  height: clamp(95px, 4vh, 126px);
   cursor: pointer;
   border-radius: 10px;
   background-color: rgb(var(--third-color));

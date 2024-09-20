@@ -61,6 +61,19 @@ const Sidebar = () => {
           </div>
         ))}
       </div>
+      <div className="nav-labels px-3 py-5 d-flex flex-column gap-4">
+        {navItems.map((navItem, index) => (
+          <div
+            key={index}
+            className={`sidebar-link ${activeLink === index ? "active" : ""}`}
+            onClick={() => handleActive(index)}
+          >
+            <Link to={navItem.title} className="fs-10 fw-bold text-capitalize">
+              {navItem.title}
+            </Link>
+          </div>
+        ))}
+      </div>
     </nav>
   );
 };

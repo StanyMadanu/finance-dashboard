@@ -8,7 +8,7 @@ const MainContent = () => {
     <main className="main position-relative">
       <div className="main-wrapper">
         <div className="row justify-content-between">
-          <div className="col-xl-8 col-lg-8 col-md-12">
+          <div className="col-xl-8 col-lg-12 col-md-12">
             <div className="main-content">
               <Header />
               <Outlet />
@@ -16,7 +16,7 @@ const MainContent = () => {
           </div>
 
           <div
-            className="col-xl-4 col-lg-4 col-md-12"
+            className="col-xl-4 col-lg-4 d-none d-lg-block"
             style={{ backgroundColor: "#f6f5fa" }}
           >
             <RightSideContent />

@@ -4,13 +4,60 @@
   transform: translateY(3rem);
   // transform: translateY(calc(100vh - 43rem));
   z-index: 1;
+  width: 70px;
+  background-color: rgb(var(--primary-color));
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 
-  .sidebar-wrapper {
-    background-color: rgb(var(--primary-color));
-    border-radius: 50px;
+  &:hover {
+    width: 250px;
+
+    .nav-labels {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .nav-labels {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
 
     .sidebar-link {
       border-radius: 50px;
+
+      a {
+        font-size: large;
+        color: rgba(var(--fx-white), 65%);
+        height: 40px;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        transition: color ease 0.5s;
+      }
+
+      &.active {
+        a {
+          color: rgb(var(--fx-white), 100%);
+        }
+      }
+
+      &:hover {
+        a {
+          color: rgb(var(--fx-white), 100%);
+        }
+      }
+    }
+  }
+
+  .sidebar-wrapper {
+    .sidebar-link {
+      border-radius: 0px;
+      background-color: rgba(var(--secondary-color), 0%);
+      box-shadow: none;
+      transition: all ease 0.8s;
 
       a {
         font-size: large;
@@ -21,24 +68,25 @@
         border-radius: 50%;
         align-items: center;
         justify-content: center;
-        transition: all ease 0.8s;
+        transition: color ease 0.8s;
       }
 
       &.active {
         background-color: rgba(var(--secondary-color), 36%);
         box-shadow: -2px -2px 30px -2px rgb(253 127 92 / 67%) inset,
           0px 0px 5px 1px rgba(0, 0, 0, 0.075);
-        transition: all ease 5s;
+        border-radius: 50px;
 
         a {
           color: rgb(var(--fx-white));
-          transition: all ease 0.8s;
         }
       }
 
       &:hover {
+        box-shadow: -2px -2px 30px -2px rgb(253 127 92 / 67%) inset,
+          0px 0px 5px 1px rgba(0, 0, 0, 0.075);
         background-color: rgba(var(--secondary-color), 36%);
-        transition: all ease 0.9s;
+        border-radius: 50px;
 
         a {
           color: rgb(var(--fx-white));
